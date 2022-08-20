@@ -1,0 +1,50 @@
+.cart {
+  color: white;
+  background-color: rgba(139, 0, 0, 1);
+  width: 10vw;
+  padding: 1vh 2vw;
+  border-radius: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: small;
+}
+
+.cart:active {
+  background-color: rgba(139, 0, 0, 0.7);
+}
+
+.text {
+  font-weight: bold;
+}
+
+.counter {
+  font-weight: bold;
+  background-color: crimson;
+  border-radius: 2vh;
+  padding: 0.5vh 1.8vh;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

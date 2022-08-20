@@ -1,0 +1,4 @@
+.foodlist {
+  display: flex;
+  flex-direction: column;
+}
